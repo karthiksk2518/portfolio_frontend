@@ -19,7 +19,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:5000/api/contact", formData);
+            const response = await axios.post("https://portfolio-backend-bc8u.onrender.com/api/contact", formData);
             console.log(response);
             setStatus("Message sent successfully!");
             setFormData({ name: "", contactNumber: "", email: "", message: "" });
