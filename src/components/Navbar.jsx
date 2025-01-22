@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <div className="lg:sticky lg:top-0">
-            <nav className='flex justify-between mx-8 md:mx-12 lg:mx-16 mt-4'>
+            <nav className='flex justify-between mx-6 lg:mx-16 mt-4'>
                 <div className='text-3xl md:text-4xl lg:text-5xl font-bold'>KUNDAN PATIDAR</div>
                 <button
                     onClick={toggleDarkMode}
