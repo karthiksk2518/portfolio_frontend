@@ -1,13 +1,19 @@
 import React from "react";
 
 const ResumePage = () => {
+
+    const softSkills = [
+        {Skill: "Time Management"},
+        {Skill: "Teamwork"},
+        {Skill: "Leadership"},
+        {Skill: "Flexibility"},
+    ]
+
     return (
         <div className="mx-4 lg:mx-0 lg:mr-16 mt-4 bg-white shadow-lg rounded-lg p-8" id="Resume">
-            {/* Title */}
             <h1 className="text-4xl font-bold text-gray-800 mb-4">Resume</h1>
             <hr className="border-t-2 border-orange-500 w-20 mb-6" />
 
-            {/* Education Section */}
             <div className="mb-10">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
                     🎓 Education
@@ -28,7 +34,6 @@ const ResumePage = () => {
                 </div>
             </div>
 
-            {/* Experience Section */}
             <div className="mb-10">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
                     💼 Experience
@@ -45,16 +50,14 @@ const ResumePage = () => {
                 </div>
             </div>
 
-            {/* Soft Skills Section */}
             <div>
                 <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
                     🧠 Soft Skills
                 </h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                    <span className="bg-gray-200 py-2 px-4 rounded-lg text-center">Time Management</span>
-                    <span className="bg-gray-200 py-2 px-4 rounded-lg text-center">Team Work</span>
-                    <span className="bg-gray-200 py-2 px-4 rounded-lg text-center">Leadership</span>
-                    <span className="bg-gray-200 py-2 px-4 rounded-lg text-center">Flexibility</span>
+                    {softSkills.map((item, index) => (
+                        <span className="bg-gray-200 py-2 px-4 rounded-lg text-center">{item.Skill}</span>
+                    ))}
                 </div>
             </div>
         </div>

@@ -1,13 +1,14 @@
 import React from "react";
 import profile from "../assets/profile.jpg";
-import { FaWhatsapp, FaLinkedin, FaTwitter, FaGithub, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaWhatsapp, FaLinkedin, FaGithub, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Sidebar = () => {
 
     const Social = [
         { icon: FaWhatsapp, color: "text-green-500", link: "https://wa.me/917566236975" },
         { icon: FaLinkedin, color: "text-blue-700", link: "https://www.linkedin.com/in/kundan-patidar-1093162a6" },
-        { icon: FaTwitter, color: "text-blue-400", link: "https://twitter.com/yourusername" },
+        { icon: FaXTwitter, color: "text-black-400", link: "https://x.com/Shinukartik" },
         { icon: FaGithub, color: "text-gray-600", link: "https://github.com/karthiksk2518" },
     ]
 

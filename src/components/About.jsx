@@ -3,7 +3,6 @@ import React from "react";
 const About = () => {
     return (
         <div className="mx-4 lg:mx-0 lg:mr-16 p-8 rounded-lg shadow-lg bg-white" id="Home">
-            {/* About Section */}
             <div className="mt-6">
                 <h1 className="text-4xl font-bold">About Me</h1>
                 <div className="w-16 h-1 mt-2 bg-orange-500"></div>
@@ -17,11 +16,9 @@ const About = () => {
                 </p>
             </div>
 
-            {/* Skills Section */}
             <div className="mt-6 mb-1">
                 <h2 className="text-3xl font-semibold text-center">What I do!</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8 px-4">
-                    {/* Web Development */}
                     <div className="bg-orange-100 p-6 rounded-lg shadow-md">
                         <h3 className="text-xl font-bold mb-2 flex items-center">
                             <span className="mr-2">💻</span> Web Development
@@ -33,7 +30,6 @@ const About = () => {
                         </p>
                     </div>
 
-                    {/* MERN Stack Developer */}
                     <div className="bg-gray-100 p-6 rounded-lg shadow-md">
                         <h3 className="text-xl font-bold mb-2 flex items-center">
                             <span className="mr-2">🛠️</span> MERN Stack Development

@@ -11,6 +11,7 @@ const Contact = () => {
     });
 
     const [status, setStatus] = useState("");
+    const [loading, setLoading] = useState(false);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -18,6 +19,8 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
+        setStatus("");
         try {
             const response = await axios.post("https://portfolio-backend-bc8u.onrender.com/api/contact", formData);
             console.log(response);
@@ -25,6 +28,8 @@ const Contact = () => {
             setFormData({ name: "", contactNumber: "", email: "", message: "" });
         } catch (error) {
             setStatus("Failed to send the message. Please try again.");
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -36,7 +41,6 @@ const Contact = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {/* Phone Section */}
                 <div className="bg-orange-100 p-6 rounded-lg shadow">
                     <div className="flex items-center mb-4">
                         <FiPhone className="text-2xl text-orange-500 mr-3" />
@@ -45,7 +49,6 @@ const Contact = () => {
                     <p className="ml-9 text-gray-800 text-sm">+91-7566236975</p>
                 </div>
 
-                {/* Email Section */}
                 <div className="bg-blue-100 p-6 rounded-lg shadow">
                     <div className="flex items-center mb-4">
                         <FiMail className="text-2xl text-blue-500 mr-3" />
@@ -123,9 +126,33 @@ const Contact = () => {
                     </div>
                     <button
                         type="submit"
-                        className="w-full py-2 px-4 bg-orange-500 text-white font-medium rounded-md shadow hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                        className="w-full py-2 px-4 bg-orange-500 text-white font-medium rounded-md shadow hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 flex justify-center items-center"
+                        disabled={loading}
                     >
-                        Submit
+                        {loading ? (
+                            <svg
+                                className="animate-spin h-5 w-5 text-white"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                            >
+                                <circle
+                                    className="opacity-25"
+                                    cx="12"
+                                    cy="12"
+                                    r="10"
+                                    stroke="currentColor"
+                                    strokeWidth="4"
+                                ></circle>
+                                <path
+                                    className="opacity-75"
+                                    fill="currentColor"
+                                    d="M4 12a8 8 0 018-8v8z"
+                                ></path>
+                            </svg>
+                        ) : (
+                            "Submit"
+                        )}
                     </button>
                 </form>
                 {status && <p className="text-center mt-4 text-gray-700">{status}</p>}
