@@ -4,7 +4,7 @@ import { FaHome, FaFileAlt, FaTools, FaBriefcase, FaEnvelope } from "react-icons
 const ContentNavbar = ({ activeSection }) => {
 
     const navItems = [
-        { id: "Home", icon: FaHome, label: "About" },
+        { id: "Home", icon: FaHome, label: "Home" },
         { id: "Resume", icon: FaFileAlt, label: "Resume" },
         { id: "Skill", icon: FaTools, label: "Skill" },
         { id: "Project", icon: FaBriefcase, label: "Project" },
@@ -12,7 +12,7 @@ const ContentNavbar = ({ activeSection }) => {
     ]
 
     return (
-        <div className="mx-4 lg:mx-0 lg:mr-16 flex justify-around items-center gap-4 lg:gap-8 shadow-md rounded-lg py-3 px-6 bg-white">
+        <div className="mx-4 lg:mx-0 lg:mr-16 flex justify-around items-center gap-4 lg:gap-8 shadow-md rounded-lg py-3 px-6 bg-white z-10">
             {navItems.map((item) => (
                 <a
                     key={item.id}
