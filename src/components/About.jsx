@@ -2,20 +2,19 @@ import React from "react";
 
 const About = () => {
     return (
-        <div className="mx-4 lg:mx-0 lg:mr-16 p-8 rounded-lg shadow-lg bg-white" id="Home">
-            <div className="mt-4">
-                <div className="mb-6">
-                    <h1 className="text-4xl font-bold text-gray-800 mb-4">About Me</h1>
-                    <hr className="border-t-2 border-orange-500 w-20 mb-6" />
-                </div>
-                <p className="mt-6 text-md text-gray-700 text-justify">
-                    Hello there! I'm thrilled to welcome you to my portfolio. I am a
-                    passionate and versatile full-stack developer with a keen interest in
-                    exploring the latest cutting-edge technologies. My journey in the
-                    world of web development has been nothing short of exhilarating, and
-                    I constantly strive to enhance my skills and embrace emerging trends
-                    in the industry.
-                </p>
+        <div className="mx-4 lg:mx-0 lg:mr-16 p-8 mt-4 rounded-lg shadow-lg bg-white" id="Home">
+            <div className="mb-6">
+                <h1 className="text-4xl font-bold text-gray-800 mb-4">About Me</h1>
+                <hr className="border-t-2 border-orange-500 w-20 mb-6" />
+            </div>
+            
+            <div className="mt-6 text-md text-gray-700 text-justify">
+                Hello there! I'm thrilled to welcome you to my portfolio. I am a
+                passionate and versatile full-stack developer with a keen interest in
+                exploring the latest cutting-edge technologies. My journey in the
+                world of web development has been nothing short of exhilarating, and
+                I constantly strive to enhance my skills and embrace emerging trends
+                in the industry.
             </div>
 
             <div className="mt-6 mb-1">
