@@ -11,8 +11,10 @@ const ResumePage = () => {
 
     return (
         <div className="mx-4 lg:mx-0 lg:mr-16 mt-4 bg-white shadow-lg rounded-lg p-8" id="Resume">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">Resume</h1>
-            <hr className="border-t-2 border-orange-500 w-20 mb-6" />
+            <div className="mb-6">
+                <h1 className="text-4xl font-bold text-gray-800 mb-4">Resume</h1>
+                <hr className="border-t-2 border-orange-500 w-20 mb-6" />
+            </div>
 
             <div className="mb-10">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">

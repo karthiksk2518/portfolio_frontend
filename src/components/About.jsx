@@ -3,9 +3,11 @@ import React from "react";
 const About = () => {
     return (
         <div className="mx-4 lg:mx-0 lg:mr-16 p-8 rounded-lg shadow-lg bg-white" id="Home">
-            <div className="mt-6">
-                <h1 className="text-4xl font-bold">About Me</h1>
-                <div className="w-16 h-1 mt-2 bg-orange-500"></div>
+            <div className="mt-4">
+                <div className="mb-6">
+                    <h1 className="text-4xl font-bold text-gray-800 mb-4">About Me</h1>
+                    <hr className="border-t-2 border-orange-500 w-20 mb-6" />
+                </div>
                 <p className="mt-6 text-md text-gray-700 text-justify">
                     Hello there! I'm thrilled to welcome you to my portfolio. I am a
                     passionate and versatile full-stack developer with a keen interest in
