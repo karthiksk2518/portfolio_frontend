@@ -10,22 +10,6 @@ const projects = [
         backendLink: "https://food-ordering-backend-gbvs.onrender.com/",
         githubLink: "https://github.com/karthiksk2518/Food-Ordering",
     },
-    {
-        id: 2,
-        name: "YUMMY BASKET",
-        image: Food,
-        liveLink: "https://food-ordering-kp.vercel.app/",
-        backendLink: "https://food-ordering-backend-gbvs.onrender.com/",
-        githubLink: "https://github.com/karthiksk2518/Food-Ordering",
-    },
-    {
-        id: 3,
-        name: "YUMMY BASKET",
-        image: Food,
-        liveLink: "https://food-ordering-kp.vercel.app/",
-        backendLink: "https://food-ordering-backend-gbvs.onrender.com/",
-        githubLink: "https://github.com/karthiksk2518/Food-Ordering",
-    },
 ];
 
 const Projects = () => {
