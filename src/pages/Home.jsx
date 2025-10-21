@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 
 const Home = () => {
     return (
-        <div className='lg:h-screen flex flex-col'>
+        <div className='lg:h-screen flex flex-col bg-white dark:bg-gray-900 transition-colors duration-300'>
             <div className='sticky z-10'>
                 <Navbar />
             </div>

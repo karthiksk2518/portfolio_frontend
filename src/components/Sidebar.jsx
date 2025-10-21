@@ -8,13 +8,13 @@ const Sidebar = () => {
     const Social = [
         { icon: FaWhatsapp, color: "text-green-500", link: "https://wa.me/917566236975" },
         { icon: FaLinkedin, color: "text-blue-700", link: "https://www.linkedin.com/in/kundan-patidar-1093162a6" },
-        { icon: FaXTwitter, color: "text-black-400", link: "https://x.com/Shinukartik" },
-        { icon: FaGithub, color: "text-gray-600", link: "https://github.com/karthiksk2518" },
+        { icon: FaXTwitter, color: "text-gray-800 dark:text-gray-300", link: "https://x.com/Shinukartik" },
+        { icon: FaGithub, color: "text-gray-600 dark:text-gray-400", link: "https://github.com/karthiksk2518" },
     ]
 
     const Contacts = [
-        { icon: FaPhone, color: "text-orange-500", label: "Phone", value: "+91-7566236975", h_line: <hr /> },
-        { icon: FaEnvelope, color: "text-red-500", label: "Email", value: "karthikpatidar2518@gmail.com", h_line: <hr /> },
+        { icon: FaPhone, color: "text-orange-500", label: "Phone", value: "+91-7566236975", h_line: <hr className="border-gray-300 dark:border-gray-600" /> },
+        { icon: FaEnvelope, color: "text-red-500", label: "Email", value: "karthikpatidar2518@gmail.com", h_line: <hr className="border-gray-300 dark:border-gray-600" /> },
         { icon: FaMapMarkerAlt, color: "text-green-500", label: "Location", value: "Ujjain, Madhya Pradesh, India" },
     ]
 
@@ -29,9 +29,9 @@ const Sidebar = () => {
             </div>
 
             {/* Details Section */}
-            <div className="flex flex-col items-center justify-center bg-white rounded-xl p-8 mt-[-5.5rem] relative z-0 shadow-md shadow-gray-500">
-                <h1 className="mt-16 text-3xl font-bold">Kundan Patidar</h1>
-                <p className="mt-1 text-lg text-gray-500">MERN Stack Developer</p>
+            <div className="flex flex-col items-center justify-center bg-white dark:bg-gray-800 rounded-xl p-8 mt-[-5.5rem] relative z-0 shadow-md shadow-gray-500 dark:shadow-gray-700 transition-colors duration-300">
+                <h1 className="mt-16 text-3xl font-bold text-gray-900 dark:text-white">Kundan Patidar</h1>
+                <p className="mt-1 text-lg text-gray-500 dark:text-gray-400">MERN Stack Developer</p>
 
                 {/* Social Icons */}
                 <div className="flex gap-4 mt-4">
@@ -42,7 +42,7 @@ const Sidebar = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <div className="bg-[#F2F7FC] p-2 rounded-lg shadow-md hover:scale-125 transition-transform duration-300">
+                            <div className="bg-[#F2F7FC] dark:bg-gray-700 p-2 rounded-lg shadow-md hover:scale-125 transition-all duration-300">
                                 <item.icon className={`w-6 h-6 cursor-pointer ${item.color}`} />
                             </div>
                         </a>
@@ -50,14 +50,14 @@ const Sidebar = () => {
                 </div>
 
                 {/* Contact Details */}
-                <div className="bg-gray-100 w-full mt-6 px-4 rounded-lg text-gray-700">
+                <div className="bg-gray-100 dark:bg-gray-700 w-full mt-6 px-4 rounded-lg text-gray-700 dark:text-gray-300 transition-colors duration-300">
                     {Contacts.map((contact, index) => (
                         <div  key={index}>
                             <div className="flex items-center my-2">
                                 <contact.icon className={`${contact.color} w-5 h-5`} />
                                 <div className="ml-6">
-                                    <div className="text-gray-500">{contact.label}</div>
-                                    <div>{contact.value}</div>
+                                    <div className="text-gray-500 dark:text-gray-400">{contact.label}</div>
+                                    <div className="text-gray-700 dark:text-gray-300">{contact.value}</div>
                                 </div>
                             </div>
                             {contact.h_line}
@@ -71,7 +71,7 @@ const Sidebar = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <button className="mt-6 bg-orange-500 text-white px-6 py-2 rounded-full shadow-md hover:bg-orange-600">
+                    <button className="mt-6 bg-orange-500 text-white px-6 py-2 rounded-full shadow-md hover:bg-orange-600 transition-colors duration-300">
                         Download Resume
                     </button>
                 </a>

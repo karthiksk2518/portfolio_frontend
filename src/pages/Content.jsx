@@ -49,7 +49,7 @@ const Content = () => {
     }, []);
 
     return (
-        <div className="relative">
+        <div className="relative bg-white dark:bg-gray-900 transition-colors duration-300">
             {/* Sticky sentinel */}
             <div ref={stickyWrapperRef} className="h-0" />
 
