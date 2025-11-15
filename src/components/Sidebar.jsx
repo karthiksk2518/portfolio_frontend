@@ -67,7 +67,7 @@ const Sidebar = () => {
 
                 {/* Download Resume */}
                 <a
-                    href="https://drive.google.com/file/d/1hlfxSbotrRPOK8Le4DtKz2jGVH1CJsbf/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/18hh55N0o6W3uxtPSw6P5iiCnJO8GL2X7/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
